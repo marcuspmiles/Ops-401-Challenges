@@ -17,6 +17,7 @@ if response == 0:
 else:
   print ('%%%Status-Up%%%')
 # If - else statement to send email on status change
+
 if response == 0:
         sender = 'from@fromdomain.com'
 receivers = ['marcuspmiles@gmail.com']
