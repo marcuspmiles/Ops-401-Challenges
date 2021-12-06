@@ -20,7 +20,7 @@ print("You have selected option: ", resp)
 range = '1-50'
 
 ### TODO: Prompt the user to type in a port range for this tool to scan
-
+portrange = input("Please type ina  port range for this tool: ")
 if resp == '1':
     print("Nmap Version: ", scanner.nmap_version())
     scanner.scan(ip_addr, range, '-v -sS')
@@ -30,10 +30,12 @@ if resp == '1':
     print("Open Ports: ", scanner[ip_addr]['tcp'].keys())
 elif resp == '2':
     ### TODO: Add missing code block here
-    print("Please enter a valid option") ### TODO: Remove this
+    print(portrange)
+    scanner.scan(portrange), range, '-v -SS'))
+### TODO: Remove this
 elif resp == '3':
     ### TODO: Add missing code block here
-    print("Please enter a valid option") ### TODO: Remove this
+### TODO: Remove this
 elif resp >= '4':
     print("Please enter a valid option")
 ``
